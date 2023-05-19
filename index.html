@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chat GPT com JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body onload="OnLoad()">
+
+    <div id="idContainer">
+
+        <textarea id="txtMsg" rows="5" wrap="soft" style="width: 98%; 
+        margin-left: 3px; margin-top: 6px" placeholder="Digite..."></textarea>
+
+       <div id="idText"></div>
+
+        <div id="elementos">
+            <button type="button" onclick="Send()" id="btnSend">Enviar</button>
+            <label id="lblSpeak"><input id="chkSpeak" type="checkbox" 
+             onclick="SpeechToText()" />Ouvir</label>
+            <label id="lblMute">
+                <input id="chkMute" type="checkbox" 
+                onclick="Mute(this.checked)"/>
+                Mudo
+            </label>
+            
+            <select id="selModel">
+                <option value="text-davinci-003">text-davinci-003</option>
+                <option value="text-davinci-002">text-davinci-002</option>
+                <option value="code-davinci-002">code-davinci-002</option>
+            </select>
+            
+            <select id="selLang" onchange="ChangeLang(this)">
+                <option value="en-US">Inglês (Estados Unidos)</option>
+                <option value="fr-FR">Francês (França)</option>
+                <option value="ru-RU">Russo (Rússia)</option>
+                <option value="pt-BR">Português (Brazil)</option>
+                <option value="es-ES">Espanhol (Espanha)</option>
+                <option value="de-DE">Alemão (Alemanha)</option>
+                <option value="it-IT">Italiano (Itália)</option>
+                <option value="pl-PL">Polonês (Polônia)</option>
+            </select>
+            <select id="selVoices"></select>
+        </div>
+
+        <textarea id="txtOutput" rows="10" style="margin-top: 10px; width: 100%;" 
+         placeholder="Resposta"></textarea>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(25, 2, 25);
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#idContainer{
+    margin: 50px;
+}
+#txtMsg{
+    font-size: 12px;
+    margin-left: 5px;
+}
+button{
+    background-color: rgba(220, 203, 203, 0.795);
+    font-size: 1.3em;
+    color: rgb(16, 19, 21);
+    border-radius: 10px;
+    cursor:pointer;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px rgb(90, 55, 46);
+}
+
+#selModel{
+    font-size: 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#selLang{
+    font-size: 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#txtMsg, #txtOutput{
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#elementos{
+    display: block;
+    align-items: center;
+}
+#btnSend{
+    padding: 5px 5px 5px 5px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
